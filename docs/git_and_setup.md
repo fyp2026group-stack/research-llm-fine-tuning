@@ -37,7 +37,7 @@ The development dependencies are pinned, but CUDA research dependencies will be 
 ## 3. Register a test experiment manifest
 
 ```bash
-python scripts/new_run.py --config configs/experiments/stage_b_preflight.json
+network-slm-manifest --config configs/experiments/stage_b_preflight.json
 ```
 
 The output is an ignored JSON file under `artifacts/runs`. A manifest records Git revision, configuration hash, library versions, and (for data-backed experiments) file checksums. The field `registered_not_executed` intentionally means **no model was run**.
