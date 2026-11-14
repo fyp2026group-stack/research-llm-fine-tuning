@@ -21,7 +21,7 @@ python -m pip install -e '.[dev]'
 ruff check .
 ruff format --check .
 pytest -q
-python scripts/new_run.py --config configs/experiments/stage_b_preflight.json
+network-slm-manifest --config configs/experiments/stage_b_preflight.json
 ```
 
 For a guided explanation of every command, read [the setup guide](docs/git_and_setup.md). See [research protocol](docs/research_protocol.md) and [decision log](docs/decision_log.md) for the scientific rationale.
